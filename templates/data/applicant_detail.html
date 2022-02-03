@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+
+{% block title%} Data Wahrehouse {% endblock %}
+{% block body %} 
+
+<h3>{{ object.name }}</h3>
+<h3>{{ object.fresher_expiriance }}</h3>>
+<h3>{{ object.agent_socialmedia }}</h3>
+
+{% endblock %}
+
+
+name = models.CharField(max_length=10)
+fresher_expiriance = models.CharField(max_length=24, choices=POSITION_CHOICES)
+agent_socialmedia = mod

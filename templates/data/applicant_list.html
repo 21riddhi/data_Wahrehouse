@@ -1,0 +1,29 @@
+{% extends 'basic.html' %}
+
+{% block title%} Data Wahrehouse {% endblock %}
+{% block body %} 
+
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>fresher_expiriance</th>
+        <th>agent_socialmedia</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+        <tr>
+            <td>{{ object.name }}</td>
+            <td>{{ object.fresher_expiriance }}</td>
+            <td>{{ object.agent_socialmedia }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+{% empty %}
+<td>No objects yet.</td>
+{% endfor %}
+</table>
+{% endblock %}

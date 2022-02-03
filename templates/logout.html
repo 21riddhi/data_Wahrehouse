@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+
+{% block title%} Data Wahrehouse {% endblock %}
+{% block body %} 
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-primary">Logout</button>
+</form>
+
+{% endif %}
+
+
+{% endblock %}

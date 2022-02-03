@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+
+{% block title%} Data Wahrehouse {% endblock %}
+{% block body %} 
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <a class="nav-link" href="{% url 'education_create' %}">Add education</a>
+    <a class="nav-link" href="{% url 'experience_create' %}">Add exepiriance</a>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
