@@ -75,13 +75,11 @@ class Experience(models.Model):
 class Skills(models.Model):
 
     candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
-    candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     skill_detail = models.TextField()
 
 
 class Academics(models.Model):
 
-    candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     academic_detail = models.TextField()
 
@@ -89,8 +87,8 @@ class Academics(models.Model):
 class AreaOfInterest(models.Model):
 
     candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
-    candidate = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     area_of_interest_detail = models.TextField()
+
 
 class Language(models.Model):
 
